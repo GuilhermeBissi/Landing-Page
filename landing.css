@@ -12,7 +12,6 @@ h1, h2, h3, h4, h5 {
     font-weight: 700;
 }
 
-
 .hero-section {
     position: relative;
 }
@@ -42,11 +41,11 @@ h1, h2, h3, h4, h5 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
-
 .card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100%;
 }
 
 .card:hover {
@@ -68,7 +67,6 @@ h1, h2, h3, h4, h5 {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
-
 
 .form-control {
     padding: 10px 15px;
@@ -106,4 +104,17 @@ footer a:hover {
     section {
         padding: 40px 0;
     }
+}
+
+/* Adicionado para melhorar os cards */
+.destination-card .card-body {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 200px);
+}
+
+/* Corrigir comportamento dos links Ver Pacotes */
+.btn-pacotes {
+    margin-top: auto;
+    width: fit-content;
 }
